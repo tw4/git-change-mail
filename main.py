@@ -14,9 +14,9 @@ for i in list:
     os.system("""
                 #!/bin/sh
                 git filter-branch --env-filter '
-                OLD_EMAIL=""
-                CORRECT_NAME=""
-                CORRECT_EMAIL=""
+                OLD_EMAIL="" # replace this with the old email
+                CORRECT_NAME="" # replace this with the correct name
+                CORRECT_EMAIL="" # replace this with the correct email
                 if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
                 then
                     export GIT_COMMITTER_NAME="$CORRECT_NAME"
