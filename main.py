@@ -1,10 +1,10 @@
+# The main py file should be in a parent directory of the folder where the repositories are located
 import os
-Folder = os.listdir("path")
+folder = os.listdir("the folder where your repositories are located")
  
 list= []
-for dosya in Folder:
-        list.append(dosya)
-
+for fileName in folder:
+        list.append(fileName)
 
 path = os.getcwd()
 
